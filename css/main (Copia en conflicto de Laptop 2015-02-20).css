@@ -1,0 +1,348 @@
+/***************
+Main Styles
+***************/
+body {
+	/*background-image: url(../img/sativa.jpg);*/
+	font: 1.25em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/***************
+Web fonts
+***************/
+
+
+@font-face {
+	font-family: canter;
+	src: url(../font/canter/Canter-Bold-3D.otf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: cantarell;
+	src: url(../font/cantarell/Cantarell-Regular.ttf);
+	font-weight: normal;
+}
+
+
+/***************
+Header
+***************/
+
+header {
+	height: 800px;
+	/*float: left;*/
+	width: 100%;
+	/*border-bottom: 2px solid slategrey;*/
+	background: linear-gradient(to bottom, #c654e7, transparent 90%),
+				linear-gradient(0deg, #fff, transparent),
+				#c654e7 url('../img/historia/gafas.jpg') no-repeat top;
+	background-size: cover;
+	padding-top: 70px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 7em;
+	/*color: #250818;*/
+	margin-top: 0px;
+	margin-bottom: -70px;
+	/*display: block;*/
+	padding-top: -100px;
+}
+
+h2 {
+	font-size: 2em;
+	/*color: #250818;*/
+	/*display: block;*/
+	/*padding-right: 370px;*/
+	letter-spacing: 0.17em;
+}
+
+h1, h2 {
+	font-family: canter;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+.arrow {
+	width: 50px;
+	margin-top: 150px;
+}
+
+/*.logo {
+	float: left;
+	padding: 10px 0 0 225px;
+}*/
+
+
+/*************
+Small header
+*************/
+
+nav {
+	text-align: center;
+	font-family: canter;
+	color: white;
+	font-size: 1.8em;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0 10px;
+	padding-top: 45px;
+	padding-left: 160px;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.headersmall {
+	height: 200px;
+	width: 100%;
+	background: linear-gradient(to bottom, #c654e7 60%, transparent 100%),
+				linear-gradient(0deg, #fff, transparent);
+	padding-top: 0px;
+	/*text-align: center;*/
+}
+
+.headersmall h1 {
+	font-size: 4em;
+	/*display: inline-block;*/
+	/*padding-bottom: 15px;*/
+	float: left;
+	padding-left: 150px;
+}
+
+.headersmall h2 {
+	font-size: 2em;
+}
+
+
+
+/*************
+Home
+*************/
+
+#gallery {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#gallery li {
+	float: left;
+	width:21.2%; /*200px/940px*/
+	margin: 5%;
+	background-color: transparent;
+	color: #bdc3c7;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 3% auto 0;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+nav a:hover {
+	color: #e7bbf8;
+}
+
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+.menu {
+	border-radius: 10%;
+	box-shadow: 10px 5px 15px grey;
+}
+
+/********
+Page: Historia
+********/
+
+.historia1,
+.historia2,
+.historia3 {
+	max-width: 940px;
+	text-align: center;
+	margin: 80px auto;
+	padding: 0 50px 30px;
+	border-bottom: 2px solid slategrey;
+	/*position: absolute;*/
+	right: 75%;
+}
+
+
+.historiaderecha,
+.historiaizquierda {
+	/*display: inline-block;*/
+	/*float: right;*/
+	font-family: cantarell;
+	font-size: 0.85em;
+	padding-top: 3%;
+}
+
+
+#hola {
+	float: left;
+	border-radius: 50%;
+}
+
+#cambiacaras {
+	float: right;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-left: 30px;
+}
+
+.historiaizquierda {
+	padding-right: 50px;
+}
+
+#bata {
+	float: left;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	margin-right: 30px;
+}
+
+#historiaescrita3 {
+	padding-bottom: 20px;
+}
+
+.historia2,
+.historia3 {
+	padding-bottom: 50px;
+}
+
+.microrev {
+	max-width: 940px;
+	text-align: justify;
+	margin: auto;
+	padding: 0 10%;
+	font-family: cantarell;
+	font-size: 0.9em;
+	line-height: 1.5em;
+}
+
+.microrev p {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+#microrevimg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10%;
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	box-shadow: 10px 5px 15px grey
+}
+
+
+/************
+Page: Servicios
+************/
+
+
+
+
+
+.servicios1,
+.servicios2,
+.servicios3 {
+	width: 75%;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 50px;
+	margin: auto;
+	max-width: 960px;
+	box-sizing: border-box;
+}
+
+.clases,
+.coaching,
+.consultas,
+.retratos,
+.bodas,
+.murales {
+	font-family: cantarell;
+	font-size: 0.85em;
+	text-align: justify;
+	max-width: 960px;
+	padding-right: 40px;
+	padding-left: 40px;
+	width: 50%
+}
+
+
+.clases,
+.consultas,
+.bodas {
+	float: left;
+}
+
+.coaching,
+.retratos,
+.murales {
+	float: right;
+}
+
+
+.ninos,
+.sketchnote,
+.cuartel,
+.caldero {
+	border-radius: 15px;
+}
+
+.sketchnote,
+.ninos,
+.cuartel,
+.caldero {
+	height: 200px;
+	width: 350px;
+}
+
+/********
+Footer
+********/
+
+footer {
+	clear: both;
+	font-size: 0.75em;
+	text-align: center;
+	color: #ccc;
+}
+
+footer a p {
+	padding-right: 200px;
+}
+
+/*********
+Clearfix hack
+*********/
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -1,0 +1,731 @@
+/***************
+Main Styles
+***************/
+body {
+	background-image: url(../img/base_color.jpg);
+	font: 1.25em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/***************
+Web fonts
+***************/
+
+
+@font-face {
+	font-family: 'canter';
+	src: url(../font/canter/Canter-Bold-3D.otf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'canter-bold';
+	src: url(../font/canter/canter-bold.otf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'canter-shadow';
+	src: url(../font/canter/Canter-Bold-Shadow.otf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'cantarell';
+	src: url(../font/cantarell/Cantarell-Regular.ttf);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'courier'
+}
+
+@font-face {
+	font-family: 'futurist';
+	src:url(../font/futurist/FUTRFW.TTF);
+	font-weight: normal;
+}
+
+
+
+/***************
+Header
+***************/
+
+.headerhome {
+	height: 800px;
+	width: 100%;
+	background: linear-gradient(to bottom, #c654e7, transparent 90%),
+				linear-gradient(0deg, #fff, transparent),
+				#c654e7 url('../img/historia/gafas40.jpg') no-repeat top;
+	background-size: cover;
+	padding-top: 70px;
+	text-align: center;
+}
+
+.headerhome h1 {
+	font-size: 7em;
+	margin-top: 0px;
+	margin-bottom: -70px;
+	padding-top: -100px;
+	max-width: 100%;
+}
+
+.headerhome h2 {
+	font-size: 2em;
+	letter-spacing: 0.17em;
+}
+
+.headerhome h1, h2 {
+	font-family: canter;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+.arrow {
+	width: 50px;
+	margin-top: 150px;
+}
+
+/*.logo {
+	float: left;
+	padding: 10px 0 0 225px;
+}*/
+
+
+/*************
+Small header
+*************/
+
+.headersmall {
+	/*max-height: 100px;*/
+	width: 100%;
+	/*border-bottom: 5px solid #c654e7;*/
+	/*background-image: url(../img/fondo_gris.jpg);*/
+	background-color: #ef2d67;
+	font-family: 'canter-bold';
+	/*box-shadow: 0 0 20px 0 grey;*/
+}
+
+.title {
+	font-size: 3em;
+	padding-left: 8%;
+	margin-top: -10px;
+	margin-bottom: 0px;
+	/*padding-right: 15%;*/
+	max-height: 80px;
+}
+
+.title,
+.nav li,
+.nav {
+	display: inline-block;
+	color: white;
+
+}
+
+/*.headersmall h1,
+.nav {
+	display: table-cell;
+	vertical-align: middle;
+}*/
+
+.nav {
+	font-family: 'canter-bold';
+	color: black;
+	font-size: 1.3em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	list-style: none;
+	/*padding-left: 25%;*/
+	float: right;
+	padding: 19px 70px 0 0;
+}
+
+.nav li {
+	margin-right: 1rem;
+	/*margin-left: 20px;*/
+}
+
+.nav li:last-child {
+	margin-right: 0;
+}
+
+
+.selected {
+	/*background: #c654e7;
+	color: white;
+	border-radius: 20px 20px 20px 20px;
+	padding: 0 10px 5px 10px;*/
+	text-decoration: underline;
+}
+
+/*Links must be black even when unvisited*/
+.nav a {
+	color: black;
+}
+
+/*Instead of having it hide on a media query, we hide the dropdown menu
+button by default*/
+.dropdown {
+	display: none;
+}
+
+/**************
+Flexbox
+**************/
+
+
+/*.headersmall,
+.headersmall nav,
+.headersmall ul {
+	display: flex;
+	flex-direction:row;
+}
+
+.headersmall {
+	justify-content: center;
+}
+
+.headersmall ul {
+	flex: 1;
+	justify-content: space-around;*/
+}
+
+/*************
+Home
+*************/
+
+#gallery {
+	margin: 0;
+	list-style: none;
+	text-align: center;
+	padding-left: 0;
+}
+
+#gallery li {
+	/*float: left;*/
+	/*width:21.2%; /*200px/940px*/
+	margin: 5% 2.5% 5% 2.5%;
+	background-color: transparent;
+	color: #bdc3c7;
+	display: inline-block;
+	position: relative;
+}
+
+#gallery img {
+	max-width: 270px;
+	position: relative;
+}
+
+.sections-text p {
+	max-width: 95%;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0%;
+	font-size: 1.5em;
+}
+
+.apartados p {
+	font-family:'canter-bold';
+	font-weight: bold;
+	color: black;
+	font-size: 2.3em;
+}
+
+
+#wrapper {
+  max-width: 1200px;
+  margin: 3% auto 0;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.sections-text {
+	position: absolute;
+	font-family:'canter-bold';
+	font-weight: bold;
+	color: white;
+	font-size: 2.3em;
+	/*margin: 0%;*/
+	top: 0;
+  	left: 0;
+  	right: 0;
+  	bottom: 0;
+  	z-index: 1;
+}
+
+.sections-text:before {
+	content: '';
+	padding-top: 65%;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+#gallery a {
+	text-align: center;
+}
+
+.img-text {
+	position: relative;
+}
+
+.img-text h2 {
+	position: absolute;
+	bottom: 50px; 
+   	left: 0; 
+   	width: 100%; 
+   	color: white;
+   	font-family: 'canter-bold';
+   	font-size: 3em;
+   	max-height: 30px;
+}
+
+/*************
+Pseudo-classes
+*************/
+
+
+.nav a:hover {
+	text-decoration: underline;
+
+}
+
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+.menu {
+	border-radius: 10%;
+	box-shadow: 10px 5px 15px grey;
+}
+
+/********
+Page: Historia
+********/
+
+.historia1,
+.historia2,
+.historia3 {
+	max-width: 940px;
+	text-align: center;
+	margin: 80px auto;
+	padding: 0 50px 50px;
+	border-bottom: 2px solid slategrey;
+	/*position: absolute;*/
+	right: 75%;
+}
+
+
+
+.historiaderecha,
+.historiaizquierda {
+	/*display: inline-block;*/
+	/*float: right;*/
+	font-family: 'cantarell';
+	font-size: 0.85em;
+	padding-top: 3%;
+}
+
+
+#hola {
+	float: left;
+	border-radius: 50%;
+	margin-right: 30px;
+}
+
+#cambiacaras {
+	float: right;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-left: 30px;
+}
+
+.historiaizquierda {
+	padding-right: 50px;
+}
+
+#bata {
+	float: left;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	margin-right: 30px;
+}
+
+#historiaescrita3 {
+	padding: 0 0 20px 0;
+
+}
+
+.historia2,
+.historia3 {
+	padding-bottom: 50px;
+}
+
+.microrev {
+	max-width: 940px;
+	text-align: justify;
+	margin: auto;
+	padding: 0 10%;
+	font-family: cantarell;
+	font-size: 0.9em;
+	line-height: 1.5em;
+}
+
+.microrev p {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+#microrevimg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10%;
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	box-shadow: 10px 5px 15px grey
+}
+
+
+/************
+Page: Servicios
+************/
+
+#wrapper-servicios {
+	max-width: 1280px;
+}
+
+
+.servicios1,
+.servicios2,
+.servicios3 {
+	width: 100%;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	margin: auto;
+	max-width: 960px;
+	box-sizing: border-box;
+}
+
+.clases,
+.coaching,
+.consultas,
+.retratos,
+.bodas,
+.murales {
+	font-family: 'courier';
+	font-size: 0.85em;
+	text-align: justify;
+	max-width: 960px;
+	padding-right: 40px;
+	padding-left: 40px;
+	width: 50%;
+	background:inherit;
+}
+
+
+.clases,
+.consultas,
+.bodas {
+	float: left;
+}
+
+.coaching,
+.retratos,
+.murales {
+	float: right;
+}
+
+
+.servicios1 img,
+.servicios2 img,
+.servicios3 img {
+	max-width: 100%;
+	box-shadow: 10px 5px 15px grey;
+	border-radius: 15px;
+	/*height: 178px;*/
+}
+
+/*************
+Servicios: third version
+*************/
+
+/***** Educación *******/
+
+.educacion {
+	background-color: #f37036;
+	min-height: 700px;
+}
+
+.nombreseccion {
+	text-align: center;
+	padding-top: 50px;
+	font-family: 'futurist';
+	color: #ef2d67;
+	letter-spacing: 0.5em;
+	font-size: 2.8em;
+	margin-bottom: 50px;
+	margin-top: 0;
+}
+
+.avoidwrap, span, .catservmobile {
+	/*display: block;*/
+	font-family: 'canter-bold';
+	color: white;
+	font-size: 2.2em;
+	padding: 0 0 0 0;
+	letter-spacing: 0.05em;
+	text-align: center;
+}
+
+span {
+	padding-left: 20px;
+}
+
+
+.descripcion,
+.descripcionbaja {
+	font-family: 'courier';
+	font-size: 0.7em;
+	text-align: justify;
+	padding-bottom: 100px;
+}
+
+.bodaspaddingoff {
+	padding-bottom: 20px;
+}
+
+
+.img-grid {
+	border-radius: 30px 30px 30px 30px;
+}
+
+.img-grid90 {
+	width: 90%;
+}
+
+.catservmobile {
+	display: none;
+}
+
+/*** Helper class to make easier putting a border ***/
+
+.borderhelper {
+	border-right: 3px solid #ef2d67;
+}
+
+/****** Coaching (cuidado con las clases ya usadas) ******/
+
+.coaching2 {
+	background-color: yellowgreen;
+	min-height: 700px;
+	margin-top: -80px;
+}
+
+/**** ENCARGOS ****/
+
+.encargos {
+	background-color: cornflowerblue;
+	min-height: 700px;
+	margin-top: -80px;
+}
+
+
+/********
+Contacto
+********/
+#contact-wrapper {
+	font-family:'courier';
+	width: 50%;
+	min-height: 260px;
+	margin-right: auto;
+	margin-left: auto;
+	bottom: 0;
+}
+
+/*************************************************
+                   PROYECTOS 0_0
+*************************************************/
+
+.img-proyectos{
+	padding-top: 20px;
+}
+
+#nokton1 {
+	text-align: left;
+}
+
+#nokton1 {
+	float: left;
+}
+
+#nokton2 {
+	float: right;
+}
+
+.cxc p {
+	padding-bottom: 20px;
+}
+
+.numeroscxc {
+	display: inline-block;
+	margin-right: 5%;
+}
+
+.pildoreta {
+	background: rgba(214, 212, 213, 0.6);
+	text-align: center;
+	padding: 20px;
+}
+
+.pildoreta span {
+	font-family: 'canter';
+	color: green;
+	font-size: 3em;
+}
+
+.pildoreta h4 {
+	font-family: 'canter-bold';
+	font-size: 1.5em;
+	margin: 10px 0 10px 0;
+	padding-left: 45px;
+	padding-right: 45px;
+}
+
+.pildoreta p {
+	padding: 0 2% 0 2%;
+}
+
+.cxc {
+	text-align: center;
+}
+
+#calendar {
+	background-color: skyblue;
+}
+
+.grid-container .grid-4 {
+	padding-left: 0;
+}
+
+
+/********
+Footer
+********/
+
+footer {
+	background-color: #d5a4d7;
+	clear: both;
+	font-size: 0.75em;
+	text-align: center;
+	/*color: #ccc;*/
+	margin-bottom: 0;
+	padding-bottom: 40px;
+	width: 100%;
+	z-index: 0;
+	margin-top: 5%;
+	min-height: 70px;
+}
+
+footer a {
+	text-align: center;
+	color: #c654e7;
+}
+
+
+footer p {
+	padding-bottom: 0px;
+	margin: 10px 0 0 0;
+	text-align: center;
+}
+
+.top {
+	padding-bottom: 40px;
+}
+
+.social-icon {
+	z-index: 1;
+	padding-top: 5px;
+	margin-right: 20px;
+}
+
+.footservicios {
+	margin-top: 0;
+}
+
+/****************
+Widgets
+****************/
+/*.twitter-timeline {
+	text-align: center;
+}
+*/
+
+
+/*********
+Clearfix hack
+*********/
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*************
+Plugin tinkering
+*************/
+
+/*** Modifications to header when sticky ****/
+
+/*
+.is-sticky .headersmall {
+	background-color: #ef2d67;
+	max-height: 50px;
+	border-bottom: none;
+	transition: 0.4s;
+}
+
+.is-sticky .title {
+	margin-top: -30px;
+	transition:0.4s;
+}
+
+.is-sticky .nav {
+	padding-top: 5px;
+}
+
+.sticky-wrapper {
+	margin-bottom: 80px;
+}
+
+.is-sticky h1 {
+	color: white;
+	padding-top: 10px;
+}
+
+.is-sticky .selected {
+	background: none;
+}
+*/
+/************* Style for Slick - carousel plugin ********/
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto 40px;
+}
